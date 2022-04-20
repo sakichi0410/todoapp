@@ -1,33 +1,104 @@
 body {
+  background-color:rgb(255, 94, 0);
+  color:#ffffff;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(246, 193, 150);
-  
 }
 
 a {
   color: #00b7ff;
 }
 
-.new-button {
-  background-color: aquamarine;
-  color: rgb(81, 113, 255);
+h1 {
+  text-align: center;
+  padding: 10px 0px 16px;
+  margin-bottom: 10px;
+ 
+
+}
+
+.btn-task {
+  color:#ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px 20px;
   border-radius: 4px;
-  padding: 5px ;
-  margin: 20px auto;
+  background-color: rgb(188, 0, 154);
+  border: 2px solid #000000;
+  border: solid 2px #ffffff;
+  margin-right: 300px;
+  border-radius: 4px;
 }
 
-table {
-  border: 3px solid #ffffff;
-  margin:20px auto;
-}
-
-tbody {
-  background-color: aliceblue;
-  border: 3px solid #ffffff;
-  margin: 20px auto;
-}
-
-tr {
+.create-form {
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
   padding: 20px;
+  margin: 15px auto;
+  border-radius: 4px;
+}
+
+ul {
+  justify-content: center;
+  
+
+}
+
+li {
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  list-style:none;
+  color:rgb(255, 94, 0) ;
+  background-color: #ffffff;
+  margin: 5px;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+
+.update-form {
+  text-align: center;
+  border: solid 2px #ffffff;
+  margin-right:300px;
+  border-radius: 4px;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 4px;
+}
+
+
+/*更新ボタン↓*/
+.update { 
+  color:#ffffff;
+  background-color: #fc87e8;
+  border: solid 2p #000000;
+  border-radius: 4px;
+}
+
+/*削除ボタン*/
+.delete {
+  color:#ffffff;
+  background-color: #1eeaea;
+  border: solid 2px #000000;
+  border-radius: 4px;
+}
+
+.task-display-btn {
+  text-align: right;
+}
+
+.display-none {
+  color:black;
+  background-color: #fbf248;
+  border-radius: 4px;
+}
+
+.display-none-delete {
+  background-color:#ff6a1a;
+  color:#ffffff;
+  border-radius: 4px;
 }

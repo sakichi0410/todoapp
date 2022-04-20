@@ -46,6 +46,7 @@ const httpUpdate = async function (url, data) {
 
 // 削除用API実行メソッド
 const httpDelete = async function (url) {
+  console.log (url);
   try {
     const response = await fetch(url, {
       method: "DELETE", // DELETE

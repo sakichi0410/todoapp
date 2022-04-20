@@ -8,6 +8,7 @@ getListItem = function () {
   return "全商品一覧を返します。";
 };
 
+
 /**
  * getItem
  * 商品情報を１件返却する処理
