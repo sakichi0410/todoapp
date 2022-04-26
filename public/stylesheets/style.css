@@ -1,20 +1,39 @@
 body {
   background-color:rgb(255, 94, 0);
   color:#ffffff;
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00b7ff;
+a:link, a:visited, a:hover, a:active{
+  color: #ffffff;
 }
 
 h1 {
   text-align: center;
   padding: 10px 0px 16px;
-  margin-bottom: 10px;
+  margin: 20px 0;
  
 
+}
+
+header nav ul {
+  margin: 20px auto;
+  border-top: #ffffff solid 2px;
+  border-bottom: #ffffff solid 2px;
+  padding: 12px 0px 12px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-family:fantasy;
+  text-align: center;
+
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li:hover{
+  text-decoration:  underline dashed #ffffff;
 }
 
 .btn-task {
@@ -35,38 +54,66 @@ h1 {
   text-align: center;
   color: #000000;
   background-color: #ffffff;
-  padding: 20px;
-  margin: 15px auto;
+  padding: 10px;
+  margin: 5px auto;
   border-radius: 4px;
 }
 
-ul {
-  justify-content: center;
-  
 
+/*テーブルversion*/
+
+tbody{
+  border-bottom: 1px solid #999;
+  padding: 10px;
+  margin: 10px;
 }
 
-li {
-  text-align: center;
+td {
+  color:rgb(255, 94, 0);
+  width: 10px;
+  padding-top: 20px;
+}
+
+
+
+tr.list_block {
+  margin-top: 20px;
+  padding: 2px;
+}
+
+.btn-up  {
+  width: 5%;
+}
+.btn-dele {
+  width: 5%;
+}
+
+
+/*前のタスク列の表記*/
+.list-bar {
+  
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   list-style:none;
   color:rgb(255, 94, 0) ;
   background-color: #ffffff;
-  margin: 5px;
+  margin: 5px auto;
   border-radius: 4px;
   padding: 10px;
 }
 
+.list-bar {
+  display: flex;
+}
+span {
+  margin: 0 50px;
+}
 
 .update-form {
   text-align: center;
-  border: solid 2px #ffffff;
-  margin-right:300px;
-  border-radius: 4px;
   color: #000000;
   background-color: #ffffff;
-  padding: 20px;
-  margin: 15px auto;
+  padding: 10px;
+  margin: 5px auto;
   border-radius: 4px;
 }
 
@@ -101,4 +148,99 @@ li {
   background-color:#ff6a1a;
   color:#ffffff;
   border-radius: 4px;
+}
+
+/*タブのスタイル*/
+.tab_wrap{max-width:100%; margin:50px auto;}
+input[type="radio"]{display:none;}
+.tab_area{font-size:0; margin:0 10px; }
+.tab1_label { 
+    border-top-right-radius:10px; 
+    border-top-left-radius:10px; 
+    text-align:center; 
+    font-size:16px;
+     width:150px; 
+     margin:0 5px;  
+     padding:12px 0; 
+     background-color:rgb(0, 60, 255);
+    color:rgb(255, 255, 255);
+}
+.tab2_label { 
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px; 
+  text-align:center; 
+  font-size:16px;
+   width:150px; 
+   margin:0 5px;  
+   padding:12px 0; 
+   background:rgb(39, 236, 0); 
+   color:rgb(255, 255, 255); 
+  }
+.tab3_label { 
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px; 
+  text-align:center; 
+  font-size:16px;
+    width:150px; 
+    margin:0 5px;  
+    padding:12px 0; 
+    background:rgb(255, 230, 0); 
+    color:#000;
+  }
+.tab4_label { 
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px; 
+  text-align:center; 
+  font-size:16px;
+    width:150px; 
+    margin:0 5px;  
+    padding:12px 0;
+    background:rgb(255, 0, 115); 
+    color:rgb(255, 255, 255); 
+    }
+  
+.tab_area label:hover{
+  opacity:0.5;
+}
+.panel_area{
+  background:#fff;   
+  border-radius: 5px;
+}
+.tab_panel{
+  width:100%; 
+  padding:80px 0; 
+  display:none;
+}
+.tab_panel p {
+  font-size:14px; 
+  letter-spacing:1px; 
+  text-align:center; 
+  color:#000;
+}
+
+#tab1:checked ~ .tab_area .tab1_label{background-color:rgb(0, 60, 255); color:rgb(255, 255, 255); }
+#tab1:checked ~ .panel_area #panel1{display:block; border-top:8px solid rgb(0, 60, 255); }
+#tab2:checked ~ .tab_area .tab2_label{background:rgb(39, 236, 0); color:rgb(255, 255, 255);  }
+#tab2:checked ~ .panel_area #panel2{display:block; border-top:8px solid rgb(39, 236, 0);}
+#tab3:checked ~ .tab_area .tab3_label{background:rgb(255, 230, 0); color:#000; }
+#tab3:checked ~ .panel_area #panel3{display:block; border-top:8px solid rgb(255, 230, 0) ;}
+#tab4:checked ~ .tab_area .tab4_label{background:rgb(255, 0, 115); color:rgb(255, 255, 255); }
+#tab4:checked ~ .panel_area #panel4{display:block; border-top:8px solid rgb(255, 0, 115);}
+
+
+footer {
+  padding: 1%;
+  margin-top:5%;
+  background-color: #fbf248;
+}
+
+
+/*スマホ画面*/
+@media screen and (max-width:640px) {
+  
+  body {
+    width: 100%;
+    
+  }
+  
 }

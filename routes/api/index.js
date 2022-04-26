@@ -1,4 +1,4 @@
-var express = require("express");
+var express = require ("express");
 const items = require("../../src/items");
 
 var router = express.Router();
@@ -35,5 +35,24 @@ router.delete("/tasks/:id", async function (req, res, next) {
   const deleteTasksId = await tasks.deleteTasksId(req.params.id);
   res.send(deleteTasksId);
 });
+
+//未処理ステータスの取得ルーティング ※
+router.get("/tasks/status/:id", async function (req, res, next) {
+  const getTasks_status = await tasks.getTasks_status(req.params.id);
+  res.send(getTasks_status);
+});
+
+//作業中ステータスの取得ルーティング　※
+router.get("/tasks/status/:id", async function (req, res, next) {
+  const getTasks_status = await tasks.getTasks_status(req.params.id);
+  res.send(getTasks_status);
+});
+
+//締切間近ステータスの取得ルーティング　※
+router.get("/tasks/status/:id", async function (req, res, next) {
+  const getTasks_status = await tasks.getTasks_status(req.params.id);
+  res.send(getTasks_status);
+});
+
 
 module.exports = router;

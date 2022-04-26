@@ -56,3 +56,39 @@ const httpDelete = async function (url) {
     console.log(err);
   }
 };
+
+//未処理タスク取得用
+const getTasks_yet = async function (url) {
+  try {
+    const response = await fetch(url, {
+      method: "GET", // GET
+    });
+    return response.json(); // JSON のレスポンスを JavaScript のオブジェクトに変換
+  } catch (err) {
+    console.log(err);
+  }
+}; 
+
+//作業中タスク取得用
+const getTasks_now = async function (url) {
+  try {
+    const response = await fetch(url, {
+      method: "GET", // GET
+    });
+    return response.json(); // JSON のレスポンスを JavaScript のオブジェクトに変換
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+//締切間近タスク取得用
+const getTasks_simekiri = async function (url) {
+  try {
+    const response = await fetch(url, {
+      method: "GET", // GET
+    });
+    return response.json(); // JSON のレスポンスを JavaScript のオブジェクトに変換
+  } catch (err) {
+    console.log(err);
+  }
+};
